@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100sp"
+        android:id="@+id/img"
+        />
+    <EditText
+        android:id="@+id/addContactUN"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Contact Name"
+        android:textColorHint="@color/colorWhiteText"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/img"
+        android:layout_marginTop="20sp"
+        android:textColor="@color/colorWhiteText"
+        android:textSize="9pt"
+        android:singleLine="true"
+        />
+    <EditText
+        android:id="@+id/AddContactEmail"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Contact Email"
+        android:textColorHint="@color/colorWhiteText"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/addContactUN"
+        android:layout_marginTop="20sp"
+        android:textColor="@color/colorWhiteText"
+        android:textSize="9pt"
+        android:inputType="textPassword"
+        android:singleLine="true"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AddContactEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:text="Add Contact"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/LoginBtn"
+        android:width="150sp"
+        android:onClick="openAllContacts"
+        />
+
+
+</RelativeLayout>
